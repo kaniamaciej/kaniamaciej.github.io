@@ -11,12 +11,12 @@ Hi, I'm **{{ site.author.name }}** :wave:
 
 I'm a PhD student in theoretical and computational neuroscience at the **Institute of Science and Technology Austria (ISTA)**.
 
-**Academic Map**
+# **Academic Map**
 
 Places where I've studied and done research. Scroll or use the buttons to zoom, drag to pan.
 
 <div id="map-wrap" style="position: relative; width: 100%; height: 520px; margin-top: 1rem;">
-  <div id="academic-map" style="width: 100%; height: 520px; border-radius: 8px; background: #eef2f5; overflow: hidden;"></div>
+  <svg id="academic-map" width="100%" height="100%" style="display:block; border-radius: 8px; background: #eef2f5;"></svg>
   <div style="position: absolute; top: 10px; right: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 500;">
     <button id="zoom-in"  aria-label="Zoom in"  style="width:34px;height:34px;font-size:20px;line-height:1;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer;">+</button>
     <button id="zoom-out" aria-label="Zoom out" style="width:34px;height:34px;font-size:20px;line-height:1;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer;">&minus;</button>
@@ -47,8 +47,8 @@ window.addEventListener('load', function () {
     {% endfor %}
   ];
 
-  var el = document.getElementById('academic-map');
-  if (!el) return;
+  var svgEl = document.getElementById('academic-map');
+  if (!svgEl) return;
 
   function colorFor(type) {
     if (type === 'research') return '#2a7de1';
@@ -57,15 +57,12 @@ window.addEventListener('load', function () {
   }
 
   function draw() {
-    el.innerHTML = '';
-    var width  = el.clientWidth  || 700;
-    var height = el.clientHeight || 520;
+    var rect = svgEl.getBoundingClientRect();
+    var width  = rect.width  || 700;
+    var height = rect.height || 520;
 
-    var svg = d3.select(el).append('svg')
-      .attr('width', width)
-      .attr('height', height)
-      .style('display', 'block');
-
+    var svg = d3.select(svgEl);
+    svg.selectAll('*').remove();          // clear previous render, keep the same <svg>
     var g = svg.append('g');
 
     var projection = d3.geoMercator()
