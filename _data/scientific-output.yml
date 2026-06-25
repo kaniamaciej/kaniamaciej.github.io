@@ -11,38 +11,31 @@ papers:
   #   link_text: DOI
 
 preprints:
-  - title: "Learning to play with spikes: characterizing, predicting, and engineering unsupervised plasticity rules for spiking reservoir computing"
-    authors: M. Kania, B. Confavreux, T. P. Vogels
-    venue: Under review, NeurIPS 2026
-    year: 2026
-    link: "#"
-    link_text: arXiv
-    note: ~2,200 STDP rule quadruplets screened in a spiking network playing Pong, with a tiered regression framework and a multi-fidelity SBI pipeline for engineering new expert rules.
 
-  - title: "Ingrams for engrams: co-active inhibitory plasticity supporting memory engrams"
-    authors: M. Kania, B. Confavreux, T. P. Vogels
-    venue: Under review, PLOS Computational Biology
+  - title: "placeholder"
+    authors: M. Kania 
+    venue: journal
     year: 2026
     link: "#"
     link_text: link
-    note: Code at VogelsLab/inhgrams (public release in preparation).
+    note: note
 
 posters:
-  - title: "Add a poster title"
-    authors: M. Kania, et al.
-    venue: Conference name
+  - title: placeholder title
+    authors: Kania et al.
+    venue: Conference
     year: 0000
-    note: One line on what you presented.
+    note: note
 
 oral_presentations:
-  - title: "Add a talk title"
-    authors: M. Kania
-    venue: Conference / seminar name
+  - title: placeholder title
+    authors: Kania et al.
+    venue: Conference
     year: 0000
-    note: One line on what you presented.
+    note: note
 
 workshops:
-  - title: "Add a workshop (attended or organized)"
-    venue: Workshop name, location
+  - title: placeholder
+    venue: loc
     year: 0000
-    note: e.g. Janelia Junior Scientist Workshop on Theoretical Neuroscience.
+    note: note
