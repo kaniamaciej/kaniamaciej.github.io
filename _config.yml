@@ -25,13 +25,14 @@ nav_exclude:                                       # These paths are excluded fr
 # to pick the right icon. Add or remove lines to show/hide social icons in the landing page.
 author:
   name              : Maciej Kania
-  image             : /images/profile.jpg          # Upload your photo to images/profile.jpg
+  image             : /images/hike_pic.jpg          
   email             : maciej.kania@ist.ac.at
   github            : kaniamaciej
-  bluesky           : kaniamaciej.bsky.social      # <-- change to your real Bluesky handle
+  bluesky           : kaniamaciej.bsky.social      
 # linkedin          : your_username
 # twitter           : your_username
-# googlescholar     : your_scholar_id
+  googlescholar     : https://scholar.google.com/citations?hl=pl&user=7v4emWUAAAAJ 
+# orcid             : 0009-0003-1653-0698 
 
 
 ### Posts ###
