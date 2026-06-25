@@ -17,8 +17,4 @@ I'm a PhD student in theoretical and computational neuroscience at the **Institu
 
 # **Scholarships & Funding**
 
-# {% for item in site.data.funding %}
-# **{{ item.title }}**{% if item.year %} · <span class="text-muted">{{ item.year }}</span>{% endif %}<br>
-# <span class="text-muted">{{ item.org }}</span>{% if item.note %}<br>{{ item.note }}{% endif %}
-
 {% endfor %}
