@@ -1,9 +1,7 @@
 ### Site Settings ###
 title               : Maciej Kania
 description         : >-
-                      PhD student in theoretical & computational neuroscience at ISTA (Vogels lab).
-                      I study what makes synaptic plasticity rules functionally effective —
-                      using spiking networks, reservoir computing, and simulation-based inference.
+                      PhD student in theoretical & computational neuroscience at ISTA.
 baseurl             : ""                          # Empty because you host at kaniamaciej.github.io directly
 repository          : kaniamaciej/kaniamaciej.github.io
 remote_theme        : yousinix/portfolYOU
