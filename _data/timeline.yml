@@ -1,18 +1,12 @@
 # This timeline shows on the About page. Each item: title, from, to, description.
 # Add, remove, or reorder entries freely. Newest first reads well.
 
-- title: PhD, Theoretical & Computational Neuroscience — ISTA (Vogels lab)
+- title: PhD, Theoretical & Computational Neuroscience — ISTA
   from: 2024
   to: present
-  description: Characterizing, predicting, and engineering unsupervised plasticity
-               rules for spiking reservoir computing. Large-scale STDP rule screens
-               in spiking networks, mechanistic signatures of learning, and
-               multi-fidelity simulation-based inference for rule discovery.
-               Advisors&#58; Basile Confavreux and Tim P. Vogels.
+  description: descrp
 
-- title: "MSc / BSc — add your degree"
+- title: "MSc / BSc"
   from: 0000
   to: 0000
-  description: Replace this entry with your earlier degree(s)&#58; institution,
-               field, and a short note on your thesis or focus. Duplicate this
-               block for each degree.
+  description: descrp
