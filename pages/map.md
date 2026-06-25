@@ -7,9 +7,15 @@ weight: 5
 
 # **Academic Map**
 
-Places where I've studied and done research. Scroll to zoom, drag to pan.
+Places where I've studied and done research. Scroll or use the buttons to zoom, drag to pan.
 
-<div id="academic-map" style="height: 520px; width: 100%; border-radius: 8px; margin-top: 1rem; background: #eef2f5; position: relative; overflow: hidden;"></div>
+<div id="map-wrap" style="position: relative; width: 100%; height: 520px; margin-top: 1rem;">
+  <div id="academic-map" style="width: 100%; height: 100%; border-radius: 8px; background: #eef2f5; overflow: hidden;"></div>
+  <div style="position: absolute; top: 10px; right: 10px; display: flex; flex-direction: column; gap: 4px; z-index: 500;">
+    <button id="zoom-in"  aria-label="Zoom in"  style="width:34px;height:34px;font-size:20px;line-height:1;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer;">+</button>
+    <button id="zoom-out" aria-label="Zoom out" style="width:34px;height:34px;font-size:20px;line-height:1;border:1px solid #ccc;border-radius:6px;background:#fff;cursor:pointer;">&minus;</button>
+  </div>
+</div>
 
 <p class="text-muted" style="margin-top: .75rem;">
   <span style="color:#2a7de1;">&#9679;</span> Research &nbsp;
@@ -37,8 +43,14 @@ window.addEventListener('load', function () {
 
   var el = document.getElementById('academic-map');
 
+  function colorFor(type) {
+    if (type === 'research') return '#2a7de1';
+    if (type === 'education') return '#e07a2a';
+    return '#6c757d';
+  }
+
   function draw() {
-    el.innerHTML = '';  // clear any previous render
+    el.innerHTML = '';
     var width  = el.clientWidth  || 700;
     var height = el.clientHeight || 520;
 
@@ -49,18 +61,10 @@ window.addEventListener('load', function () {
 
     var g = svg.append('g');
 
-    function colorFor(type) {
-      if (type === 'research') return '#2a7de1';
-      if (type === 'education') return '#e07a2a';
-      return '#6c757d';
-    }
-
-    var meanLng = places.length ? d3.mean(places, function(d){return d.lng;}) : 12;
-    var meanLat = places.length ? d3.mean(places, function(d){return d.lat;}) : 50;
-
+    // Fit the whole world into the view.
     var projection = d3.geoMercator()
-      .center([meanLng, meanLat])
-      .scale(width * 0.9)
+      .scale(width / (2 * Math.PI))
+      .center([0, 20])
       .translate([width / 2, height / 2]);
 
     var path = d3.geoPath().projection(projection);
@@ -84,7 +88,7 @@ window.addEventListener('load', function () {
           .attr('class', 'pin')
           .attr('cx', function(d){ return projection([d.lng, d.lat])[0]; })
           .attr('cy', function(d){ return projection([d.lng, d.lat])[1]; })
-          .attr('r', 6)
+          .attr('r', 5)
           .attr('fill', function(d){ return colorFor(d.type); })
           .attr('stroke', '#fff')
           .attr('stroke-width', 1.5)
@@ -115,20 +119,27 @@ window.addEventListener('load', function () {
         .on('click', function (event, d) { if (d.url) window.open(d.url, '_blank'); });
 
       var zoom = d3.zoom()
-        .scaleExtent([1, 12])
+        .scaleExtent([1, 40])
         .on('zoom', function (event) {
           g.attr('transform', event.transform);
           g.selectAll('path.country').attr('stroke-width', 0.5 / event.transform.k);
           g.selectAll('circle.pin')
-            .attr('r', 6 / event.transform.k)
+            .attr('r', 5 / event.transform.k)
             .attr('stroke-width', 1.5 / event.transform.k);
         });
 
       svg.call(zoom);
+
+      // + / - buttons
+      d3.select('#zoom-in').on('click', function () {
+        svg.transition().duration(300).call(zoom.scaleBy, 1.6);
+      });
+      d3.select('#zoom-out').on('click', function () {
+        svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
+      });
     });
   }
 
-  // Draw once layout is settled, and redraw on resize.
   setTimeout(draw, 100);
   var rt;
   window.addEventListener('resize', function () {
