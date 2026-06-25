@@ -1,0 +1,31 @@
+# Places for the Academic Map page.
+# Each entry needs: name, lat, lng. Optional: role, years, type, url.
+#   type controls the pin colour: "education" or "research" (anything else = default)
+# To add a place: copy a block, then find its coordinates by searching the place
+# on Google Maps, right-clicking the spot, and clicking the lat,lng numbers to copy them.
+
+- name: Institute of Science and Technology Austria (ISTA)
+  lat: 48.309901
+  lng: 16.259172
+  role: PhD, Vogels lab
+  years: 2024 — present
+  type: research
+  url: https://ista.ac.at
+
+# ---- Placeholder entries below: edit or delete ----
+
+- name: "Add your university (e.g. MSc)"
+  lat: 52.2297      # <-- replace with real coordinates
+  lng: 21.0122      # <-- replace with real coordinates
+  role: "MSc, your field"
+  years: "0000 — 0000"
+  type: education
+  url: ""
+
+- name: "Add another place (e.g. BSc or a research stay)"
+  lat: 50.0647
+  lng: 19.9450
+  role: "BSc / Research visit"
+  years: "0000 — 0000"
+  type: education
+  url: ""
