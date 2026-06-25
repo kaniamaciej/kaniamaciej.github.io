@@ -25,7 +25,7 @@ nav_exclude:                                       # These paths are excluded fr
 # to pick the right icon. Add or remove lines to show/hide social icons in the landing page.
 author:
   name              : Maciej Kania
-  image             : /images/hike_pic.jpg          
+  image             : /images/hike_pic.png          
   email             : maciej.kania@ist.ac.at
   github            : kaniamaciej
   bluesky           : kaniamaciej.bsky.social      
