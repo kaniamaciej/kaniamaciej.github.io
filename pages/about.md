@@ -11,7 +11,7 @@ Hi, I'm **{{ site.author.name }}** :wave:
 
 I'm a PhD student in theoretical and computational neuroscience at the **Institute of Science and Technology Austria (ISTA)**.
 
-# **Academic Map**
+**Academic Map**
 
 Places where I've studied and done research. Scroll or use the buttons to zoom, drag to pan.
 
