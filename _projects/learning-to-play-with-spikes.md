@@ -1,7 +1,7 @@
 ---
-name: Learning to play with spikes
+name: placeholder
 weight: 2
-tools: ...
+tools: [Auryn, SBI]
 image: /images/profile.jpg
 description: ...
 external_url: "#"
