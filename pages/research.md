@@ -2,7 +2,7 @@
 layout: page
 title: Scientific output
 permalink: /output/
-weight: 2
+weight: 3
 ---
 
 {% assign d = site.data.scientific-output %}
