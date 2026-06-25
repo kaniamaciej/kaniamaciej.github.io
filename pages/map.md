@@ -13,7 +13,7 @@ Places where I've studied and done research.
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-<div id="academic-map" style="height: 70vh; min-height: 420px; width: 100%; border-radius: 8px; margin-top: 1rem;"></div>
+<div id="academic-map" style="height: 520px; width: 100%; border-radius: 8px; margin-top: 1rem;"></div>
 
 <p class="text-muted" style="margin-top: .75rem;">
   <span style="color:#2a7de1;">&#9679;</span> Research &nbsp;
@@ -21,7 +21,7 @@ Places where I've studied and done research.
 </p>
 
 <script>
-(function () {
+window.addEventListener('load', function () {
   // Pull place data from the Jekyll data file.
   var places = [
     {% assign place_list = site.data["map-places"] %}
@@ -76,5 +76,8 @@ Places where I've studied and done research.
   } else {
     map.setView([48.2, 16.3], 4);
   }
-})();
+
+  // Fix collapsed/zero-height map: force Leaflet to re-measure once laid out.
+  setTimeout(function () { map.invalidateSize(); }, 200);
+});
 </script>
