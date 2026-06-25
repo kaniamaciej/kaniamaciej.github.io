@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Community
+title: NeuroCommunity
 permalink: /community/
 weight: 4
 ---
