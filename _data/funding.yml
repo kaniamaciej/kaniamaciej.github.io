@@ -1,8 +1,8 @@
 # Scholarships, fellowships, and grants. Fields: title, org, year, note (optional).
 
-- title: "Add award / fellowship / grant"
-  org: Funding body
-  year: 0000
-  note: Short note (amount, purpose, or selectivity if relevant).
+- title: placeholder
+  org: placeholder
+  year: 2025
+  note: Short note
 
 # Duplicate the block above for each award.
