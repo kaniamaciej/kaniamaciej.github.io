@@ -1,0 +1,18 @@
+# Community & outreach activities. Fields: role, org, from, to (optional), description.
+
+activities:
+  - role: Co-organizer, Austrian Brain Bee
+    org: Austrian Neuroscience Association (ANA)
+    from: 2025
+    to: present
+    description: Lead organizer of the inaugural online neuroscience competition for
+                 high-school students — school outreach, quiz content, GDPR-compliant
+                 registration, and competition logistics.
+
+  - role: Student Neuro Track Representative
+    org: ISTA Graduate School
+    from: 2024
+    to: present
+    description: Representing neuroscience PhD students within the graduate school.
+
+  # Duplicate a block above to add more. 'to' is optional (omit for one-off events).

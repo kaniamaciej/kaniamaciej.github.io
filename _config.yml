@@ -1,0 +1,70 @@
+### Site Settings ###
+title               : Maciej Kania
+description         : >-
+                      PhD student in theoretical & computational neuroscience at ISTA (Vogels lab).
+                      I study what makes synaptic plasticity rules functionally effective —
+                      using spiking networks, reservoir computing, and simulation-based inference.
+baseurl             : ""                          # Empty because you host at kaniamaciej.github.io directly
+repository          : kaniamaciej/kaniamaciej.github.io
+remote_theme        : yousinix/portfolYOU
+open_new_tab        : true                         # Opens external URLs in a new tab
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                       # These paths are excluded from the navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+
+
+### Author Info ###
+# The key names here (email, github, bluesky...) are matched against _data/social-media.yml
+# to pick the right icon. Add or remove lines to show/hide social icons in the landing page.
+author:
+  name              : Maciej Kania
+  image             : /images/profile.jpg          # Upload your photo to images/profile.jpg
+  email             : maciej.kania@ist.ac.at
+  github            : kaniamaciej
+  bluesky           : kaniamaciej.bsky.social      # <-- change to your real Bluesky handle
+# linkedin          : your_username
+# twitter           : your_username
+# googlescholar     : your_scholar_id
+
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: false
+
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - LICENSE
+  - "*.log"
+  - Gemfile
+  - Gemfile.lock
