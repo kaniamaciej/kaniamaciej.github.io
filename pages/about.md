@@ -15,6 +15,4 @@ I'm a PhD student in theoretical and computational neuroscience at the **Institu
 {% include about/timeline.html %}
 </div>
 
-# **Scholarships & Funding**
-
 {% endfor %}
