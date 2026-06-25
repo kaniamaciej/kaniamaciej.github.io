@@ -2,7 +2,7 @@
 layout: page
 title: Community
 permalink: /community/
-weight: 3
+weight: 4
 ---
 
 # **Community Activities**
