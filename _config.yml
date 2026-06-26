@@ -1,7 +1,8 @@
 ### Site Settings ###
 title               : Maciej Kania
 description         : >-
-                      PhD Student @ ISTA. 
+                      Neurotheory PhD Student @ ISTA, Vogels Lab.
+                      
                       Opinions are my own. 
 baseurl             : ""                          # Empty because you host at kaniamaciej.github.io directly
 repository          : kaniamaciej/kaniamaciej.github.io
