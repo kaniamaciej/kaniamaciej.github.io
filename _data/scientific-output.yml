@@ -2,40 +2,92 @@
 # Fields per entry: title, authors, venue, year, and optional: link, link_text, note.
 # Leave a field out if you don't need it. Add/remove entries freely.
 
-papers:
-  # - title: Example published paper title
-  #   authors: M. Kania, B. Confavreux, T. P. Vogels
-  #   venue: Journal name, vol(issue), pages
-  #   year: 2026
-  #   link: https://doi.org/...
-  #   link_text: DOI
-
 preprints:
+  # - title: "Learning to play with spikes: characterizing, predicting, and engineering unsupervised plasticity rules for spiking reservoir computing"
+  #   authors: "M. Kania, B. Confavreux & T. P. Vogels"
+  #   venue: "In submission"
+  #   year: 2026
+  - title: "Memory by a thousand rules: automated discovery of multi-type plasticity rules reveals variety & degeneracy at the heart of learning"
+    authors: "B. Confavreux, *Z. P. Harrington, *M. Kania, P. Ramesh, A. N. Krouglova, P. A. Bozelos, … & T. P. Vogels"
+    venue: "bioRxiv (preprint)"
+    year: 2025
+    link: "https://doi.org/10.1101/2025.05.28.656584"
+    link_text: "DOI"
+    note: "* equal contribution"
 
-  - title: "placeholder"
-    authors: M. Kania 
-    venue: journal
-    year: 2026
-    link: "#"
-    link_text: link
-    note: note
+student journals:
+  - title: "Contemporary models of nerve cell activity"
+    authors: "M. Kania"
+    venue: "Research and Development of Young Scientists in Poland (review, in Polish). ISBN 978-83-66743-45-8"
+    year: 2021
 
-posters:
-  - title: placeholder title
-    authors: Kania et al.
-    venue: Conference
-    year: 0000
-    note: note
+  - title: "Discopathy as one of the most common conditions in small animals"
+    authors: "*M. Kania, *A. Głuc, *N. Spyra"
+    venue: "Research and Development of Young Scientists in Poland (review, in Polish). ISBN 978-83-66743-52-6"
+    year: 2021
+    note: "* equal contribution"
 
 oral_presentations:
-  - title: placeholder title
-    authors: Kania et al.
-    venue: Conference
-    year: 0000
-    note: note
+  - title: "Learning to play Pong with spikes"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "Neuroscience Student Symposium, Klosterneuburg, Austria"
+    year: 2026
+    
+  - title: "Playing Pong the brain's way: bridging unsupervised and supervised learning through meta-learned plasticity"
+    authors: "M. Kania, B. Confavreux, Z. P. M. Harrington, T. P. Vogels"
+    venue: "Young Scientists Symposium 2025, Klosterneuburg, Austria"
+    year: 2025
+
+  - title: "Memories in inhibitory neurons: a computational model for memory storage and recall using inhibitory synaptic plasticity"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "12th Neuronus Neuroscience Forum, Cracow, Poland"
+    year: 2022
+
+posters:
+  - title: "Get the ball rolling: computing complex tasks using recurrent spiking networks with Hebbian plasticity"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "Bernstein Conference 2025, Frankfurt, Germany"
+    year: 2025
+
+  - title: "Get the ball rolling: computing complex tasks using recurrent spiking networks with Hebbian plasticity"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "Austrian Neuroscience Association Meeting, Klosterneuburg, Austria"
+    year: 2025
+
+  - title: "Inhibitory synaptic plasticity allows disinhibitory recall of overlapping excitatory-inhibitory assemblies"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "Cosyne 2025, Montreal, Canada"
+    year: 2025
+
+  - title: "Cell-type-specific dendritic integration rules in hippocampal CA1 OLM interneurons"
+    authors: "M. Kania, A. Tzilivaki, E. K. Bononge, M. Lynn, V. Dulam, F. Michaud, D. Topolnik, L. Topolnik"
+    venue: "Society for Neuroscience Meeting 2024, Chicago, USA"
+    year: 2024
+
+  - title: "Inhgrams for engrams: inhibitory plasticity aids recall by disinhibition of excitatory-inhibitory engrams"
+    authors: "M. Kania, B. Confavreux, T. P. Vogels"
+    venue: "FENS Meeting 2024, Vienna, Austria"
+    year: 2024
+    link: "https://doi.org/10.57736/8082-6677"
+    link_text: "DOI"
+
+  - title: "In silico approach to describe dendritic properties of the OLM interneurons in the mouse CA1 hippocampus"
+    authors: "M. Kania, A. Tzilivaki, E. K. Bononge, L. Topolnik"
+    venue: "Journées de la recherche du CHU de Québec-Université Laval 2024, Canada"
+    year: 2024
+    
+  - title: "Thermodynamic theory of action potential propagation"
+    authors: "M. Kania"
+    venue: "13th Nationwide Conference of R&D of Young Scientists in Poland (online)"
+    year: 2021
+
+  - title: "Sox2 factor: its role in neural development and maintaining its right physiology"
+    authors: "M. Kania"
+    venue: "6th International Conference of Cell Biology, Cracow, Poland (online)"
+    year: 2020
 
 workshops:
-  - title: placeholder
-    venue: loc
-    year: 0000
-    note: note
+  - title: "Advances in optimization of biologically constrained models and how to use them"
+    authors: "A. Quaresima, J. Gygax, M. Kania, Z. Harrington"
+    venue: "Bernstein Conference 2026, Frankfurt, Germany"
+    year: 2026
