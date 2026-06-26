@@ -27,6 +27,15 @@ weight: 3
 {% endfor %}
 {% endif %}
 
+{% if d.studentjournal and d.studentjournal.size > 0 %}
+## Student journals
+{% for item in d.studentjournal %}
+**{{ item.title }}**<br>
+<span class="text-muted">{{ item.authors }}{% if item.venue %} · {{ item.venue }}{% endif %}{% if item.year %} · {{ item.year }}{% endif %}</span>{% if item.link %} · [{{ item.link_text | default: "link" }}]({{ item.link }}){% endif %}{% if item.note %}<br>{{ item.note }}{% endif %}
+
+{% endfor %}
+{% endif %}
+
 {% if d.posters and d.posters.size > 0 %}
 ## Posters
 {% for item in d.posters %}
