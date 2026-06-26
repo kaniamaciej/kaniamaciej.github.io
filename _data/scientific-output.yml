@@ -15,7 +15,7 @@ preprints:
     link_text: "DOI"
     note: "* equal contribution"
 
-student journals:
+studentjournal:
   - title: "Contemporary models of nerve cell activity"
     authors: "M. Kania"
     venue: "Research and Development of Young Scientists in Poland (review, in Polish). ISBN 978-83-66743-45-8"
