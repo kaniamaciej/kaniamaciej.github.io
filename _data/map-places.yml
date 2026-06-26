@@ -11,6 +11,13 @@
   years: 2024 — present
   type: research
 
+- name: NERF/KU Luuven 
+  lat: 50.87898500009147
+  lng: 4.66824143305435
+  role: External Rotation
+  years: 2025 
+  type: research
+
 - name: VU Amsterdam
   lat: 52.33428780245261
   lng: 4.864550455284629
@@ -19,11 +26,25 @@
   type: education
 
 - name: Université Laval
-  lat: 46.76873400337772
-  lng: -71.28266447726065
+  lat: 46.78143770104618 
+  lng: -71.27472094415322
   role: Neurasmus: Eramsus Mundus
   years: 2023 — 2024
   type: education
+  
+- name: CHU de Québec - Université Laval
+  lat: 46.76873400337772
+  lng: -71.28266447726065
+  role: Master's Thesis 
+  years: 2023 — 2024
+  type: research
+  
+- name: École Normale Supérieure
+  lat: 48.8436428385219 
+  lng: 2.3454528260041227
+  role: Master's Internship
+  years: 2023
+  type: research
 
 - name: Université de Bordeaux
   lat: 44.79754556326509
@@ -31,3 +52,31 @@
   role: Neurasmus: Eramsus Mundus
   years: 2022 — 2023
   type: education
+
+- name: Nencki Institute of Experimental Biology of the Polish Academy of Sciences
+  lat: 52.213437370132965
+  lng: 20.983930010028384
+  role: Master's internship
+  years: 2022
+  type: research
+  
+- name: Université de Montréal
+  lat: 45.5026604516552
+  lng: -73.61615173224791
+  role: Bilateral Exchange
+  years: 2021-2022
+  type: education
+  
+- name: Jagiellonian University
+  lat: 50.02706821025177
+  lng: 19.901179163801014
+  role: Bachelor's in Neurobiology
+  years: 2019 — 2022
+  type: education
+
+- name: Institute of Pharmacology of the Polish Academy of Sciences
+  lat: 50.093077807530946
+  lng: 19.884537813694784
+  role: Bachelor's internship
+  years: 2019
+  type: research
