@@ -36,18 +36,18 @@ weight: 3
 {% endfor %}
 {% endif %}
 
-{% if d.posters and d.posters.size > 0 %}
-## Posters
-{% for item in d.posters %}
+{% if d.oral_presentations and d.oral_presentations.size > 0 %}
+## Oral presentations
+{% for item in d.oral_presentations %}
 **{{ item.title }}**<br>
 <span class="text-muted">{{ item.authors }}{% if item.venue %} · {{ item.venue }}{% endif %}{% if item.year %} · {{ item.year }}{% endif %}</span>{% if item.note %}<br>{{ item.note }}{% endif %}
 
 {% endfor %}
 {% endif %}
 
-{% if d.oral_presentations and d.oral_presentations.size > 0 %}
-## Oral presentations
-{% for item in d.oral_presentations %}
+{% if d.posters and d.posters.size > 0 %}
+## Posters
+{% for item in d.posters %}
 **{{ item.title }}**<br>
 <span class="text-muted">{{ item.authors }}{% if item.venue %} · {{ item.venue }}{% endif %}{% if item.year %} · {{ item.year }}{% endif %}</span>{% if item.note %}<br>{{ item.note }}{% endif %}
 
