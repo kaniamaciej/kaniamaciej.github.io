@@ -31,7 +31,7 @@ Places where I've studied and done research. Scroll or use the buttons to zoom, 
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
 <script>
-window.addEventListener('load', function () {
+(function initAcademicMap() {
   var places = [
     {% assign place_list = site.data["map-places"] %}
     {% for p in place_list %}
@@ -47,22 +47,28 @@ window.addEventListener('load', function () {
     {% endfor %}
   ];
 
-  var svgEl = document.getElementById('academic-map');
-  if (!svgEl) return;
-
   function colorFor(type) {
     if (type === 'research') return '#2a7de1';
     if (type === 'education') return '#e07a2a';
     return '#6c757d';
   }
 
+  var drawn = false;
+
   function draw() {
+    var svgEl = document.getElementById('academic-map');
+    if (!svgEl) return;
+    // Need d3 + topojson loaded, and a measurable width.
+    if (typeof d3 === 'undefined' || typeof topojson === 'undefined') return;
     var rect = svgEl.getBoundingClientRect();
-    var width  = rect.width  || 700;
+    var width  = rect.width;
     var height = rect.height || 520;
+    if (!width) return;                 // not laid out yet; try again later
+    if (drawn) return;
+    drawn = true;
 
     var svg = d3.select(svgEl);
-    svg.selectAll('*').remove();          // clear previous render, keep the same <svg>
+    svg.selectAll('*').remove();
     var g = svg.append('g');
 
     var projection = d3.geoMercator()
@@ -139,13 +145,25 @@ window.addEventListener('load', function () {
       d3.select('#zoom-out').on('click', function () {
         svg.transition().duration(300).call(zoom.scaleBy, 1 / 1.6);
       });
+    }).catch(function (err) {
+      console.error('Map data failed to load:', err);
     });
   }
 
-  setTimeout(draw, 150);
+  // Try repeatedly until everything is ready (libraries loaded + element measurable),
+  // regardless of whether the load event already fired.
+  var tries = 0;
+  var timer = setInterval(function () {
+    tries++;
+    draw();
+    if (drawn || tries > 40) clearInterval(timer);   // give up after ~10s
+  }, 250);
+
+  // Redraw cleanly on resize.
   var rt;
   window.addEventListener('resize', function () {
-    clearTimeout(rt); rt = setTimeout(draw, 200);
+    clearTimeout(rt);
+    rt = setTimeout(function () { drawn = false; draw(); }, 200);
   });
-});
+})();
 </script>
