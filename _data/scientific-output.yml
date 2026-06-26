@@ -8,12 +8,12 @@ preprints:
   #   venue: "In submission"
   #   year: 2026
   - title: "Memory by a thousand rules: automated discovery of multi-type plasticity rules reveals variety & degeneracy at the heart of learning"
-    authors: "B. Confavreux, *Z. P. Harrington, *M. Kania, P. Ramesh, A. N. Krouglova, P. A. Bozelos, … & T. P. Vogels"
+    authors: "B. Confavreux, &ast;Z. P. Harrington, &ast;M. Kania, P. Ramesh, A. N. Krouglova, P. A. Bozelos, … & T. P. Vogels"
     venue: "bioRxiv (preprint)"
     year: 2025
     link: "https://doi.org/10.1101/2025.05.28.656584"
     link_text: "DOI"
-    note: "* equal contribution"
+    note: "&ast;equal contribution"
 
 studentjournal:
   - title: "Contemporary models of nerve cell activity"
@@ -22,10 +22,10 @@ studentjournal:
     year: 2021
 
   - title: "Discopathy as one of the most common conditions in small animals"
-    authors: "*M. Kania, *A. Głuc, *N. Spyra"
+    authors: "&ast;M. Kania, &ast;A. Głuc, &ast;N. Spyra"
     venue: "Research and Development of Young Scientists in Poland (review, in Polish). ISBN 978-83-66743-52-6"
     year: 2021
-    note: "* equal contribution"
+    note: "&ast;equal contribution"
 
 oral_presentations:
   - title: "Learning to play Pong with spikes"
