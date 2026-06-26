@@ -9,25 +9,25 @@
   lng: 16.259172
   role: PhD student
   years: 2024 — present
-  # type: research
+  type: research
 
 - name: VU Amsterdam
   lat: 52.33428780245261
   lng: 4.864550455284629
   role: Neurasmus: Eramsus Mundus
   years: 2022 — 2023
-  # type: education
+  type: education
 
 - name: Université Laval
   lat: 46.76873400337772
   lng: -71.28266447726065
   role: Neurasmus: Eramsus Mundus
   years: 2023 — 2024
-  # type: education
+  type: education
 
 - name: Université de Bordeaux
   lat: 44.79754556326509
   lng: -0.6101651446898624
   role: Neurasmus: Eramsus Mundus
   years: 2022 — 2023
-  # type: education
+  type: education
