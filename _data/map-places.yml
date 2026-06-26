@@ -7,25 +7,27 @@
 - name: Institute of Science and Technology Austria (ISTA)
   lat: 48.309901
   lng: 16.259172
-  role: PhD, Vogels lab
+  role: PhD student
   years: 2024 — present
-  type: research
-  url: https://ista.ac.at
+  # type: research
 
-# ---- Placeholder entries below: edit or delete ----
+- name: VU Amsterdam
+  lat: 52.33428780245261
+  lng: 4.864550455284629
+  role: Neurasmus: Eramsus Mundus
+  years: 2022 — 2023
+  # type: education
 
-- name: "Add your university (e.g. MSc)"
-  lat: 52.2297      # <-- replace with real coordinates
-  lng: 21.0122      # <-- replace with real coordinates
-  role: "MSc, your field"
-  years: "0000 — 0000"
-  type: education
-  url: ""
+- name: Université Laval
+  lat: 46.76873400337772
+  lng: -71.28266447726065
+  role: Neurasmus: Eramsus Mundus
+  years: 2023 — 2024
+  # type: education
 
-- name: "Add another place (e.g. BSc or a research stay)"
-  lat: 50.0647
-  lng: 19.9450
-  role: "BSc / Research visit"
-  years: "0000 — 0000"
-  type: education
-  url: ""
+- name: Université de Bordeaux
+  lat: 44.79754556326509
+  lng: -0.6101651446898624
+  role: Neurasmus: Eramsus Mundus
+  years: 2022 — 2023
+  # type: education
